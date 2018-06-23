@@ -9,24 +9,36 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
     <TextView
         android:id="@+id/etxt_encabezado1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Seleccione su fecha" />
+        android:textSize="40sp"
+        android:text="Seleccione su fecha"/>
 
     <EditText
         android:id="@+id/fecha1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:hint="DD/MM/YY"/>
 
     <EditText
         android:id="@+id/hora1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:hint="HH/SS"/>
 
     <TextView
         android:id="@+id/etxt_encabezado2"
@@ -39,24 +51,29 @@
         android:id="@+id/fecha2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:hint="DD/MM/YY"/>
 
     <EditText
         android:id="@+id/hora2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:hint="HH/SS"/>
 
-    <Button
-        android:id="@+id/boton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calcular" />
-
-    <TextView
+        <TextView
         android:id="@+id/respuesta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
 
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular" />
+
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>

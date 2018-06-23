@@ -33,10 +33,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         fecha1 = (EditText) findViewById(R.id.fecha1);
+        fecha1.setFocusable(false);
         hora1 = (EditText) findViewById(R.id.hora1);
+        hora1.setFocusable(false);
 
         fecha2 = (EditText) findViewById(R.id.fecha2);
+        fecha2.setFocusable(false);
         hora2 = (EditText) findViewById(R.id.hora2);
+        hora2.setFocusable(false);
         boton = (Button) findViewById(R.id.boton);
         respuesta = (TextView) findViewById(R.id.respuesta);
 
